@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/about.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-left mb-0" style="color: white;">YourDelivery</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-right">
+                <a class="nav-link active" aria-current="page" href="/" style="color: #fff;">Home</a>
+                <a class="nav-link" href="/info" style="color: #fff;">About Us</a>
+                <% if(!currentUser) { %>
+                    <a class="nav-link" href="/login" style="color: #fff;">Login</a>
+                    <a class="nav-link" href="/register" style="color: #fff;">Register</a>
+                    <% } else { %>
+                        <form action="/logout" method="POST">
+                            <a><button class="nav-link">Logout</button></a>
+                        </form>
+                        <!-- <a class="nav-link" href="/logout">Logout</a> -->
+                        <% } %>
+            </nav>
+        </div>
+    </header>
+    <h1 style="color: white;">About Us</h1>
+    <blockquote class="q-card q-card-color-1">
+        <div class="content">Increasing demand and increase in sales makes it chaotic for the delivery proof to travel
+            via paper trail. In particular, it is the company providing the products that will have to answer these new,
+            individual demands and examine their existing ordering and delivery processes. Against the backdrop of
+            products that are sensitive or expensive for customers, the topics of security and efficiency are gaining
+            importance in the ordering and delivery process for shippers and customers alike. In order to further
+            increase the appeal of a product, we need to be more innovative in our approach towards our customers, like
+            getting instant proof of delivery or instant feedback of the delivered product.So here we bring our company
+            to implement these features. Presenting infront of you the company <b>YourDelivery</b>.</div>
+        <div class='author'>YourDelivery</div>
+    </blockquote>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
